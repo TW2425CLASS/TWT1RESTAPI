@@ -1,4 +1,4 @@
-# Trabalho Prático #1
+# Atividade Prática #1
 
 ## Consumo e Implementação de APIs RESTful
 
@@ -10,7 +10,7 @@ Consolidar os conhecimentos em desenvolvimento web com foco na criação, consum
 - MongoDB / MongoDB Atlas
 - JSON-Server
 - Fetch API
-- Swagger (opcional)
+- Swagger
 
 O projeto simula o ciclo completo de desenvolvimento de uma aplicação web com front-end e back-end separados, incluindo testes e deploy.
 
@@ -22,7 +22,7 @@ O projeto simula o ciclo completo de desenvolvimento de uma aplicação web com 
 
 - Criar um ficheiro `bd.json` com:
 
-  - Lista de alunos: `nome`, `apelido`, `curso`, `anoCurricular`
+  - Lista de alunos: `nome`, `apelido`, `idCurso`, `anoCurricular`
   - Lista de cursos: `nomeDoCurso`
 
 - 📁 Diretório sugerido: `/mock-data/`
@@ -46,14 +46,19 @@ O projeto simula o ciclo completo de desenvolvimento de uma aplicação web com 
 ### Parte 3: Interface Web (CRUD de Alunos)
 
 - Desenvolver uma página web funcional para gerir alunos:
-  - Ver alunos
-  - Adicionar aluno
-  - Editar aluno
-  - Apagar aluno
+  1. Ver alunos	
+  2. Apagar aluno
+  3. Adicionar aluno
+  4. Editar aluno
+- Opcionalmente gerir cursos
 - Utilizar `Fetch API` e programação assíncrona
+- 📁 Diretório sugerido: `/frontend/` (ver notas)
+  - 📄 Entregável: Página funcional conectada à API simulada
 
-- 📁 Diretório sugerido: `/frontend/`
-- 📄 Entregável: Página funcional conectada à API simulada
+
+Notas : 
+
+* verifique como é possível servir recursos estáticos a partir do json server
 
 ---
 
@@ -71,8 +76,8 @@ O projeto simula o ciclo completo de desenvolvimento de uma aplicação web com 
 
 ### Parte 5: Deploy da Aplicação
 
-- Fazer deploy do front-end no [Vercel](https://vercel.com)
-- (Opcional) Fazer deploy da API no [Render](https://render.com)
+- Fazer deploy da API no [Render](https://render.com)
+- Fazer deploy do front-end no [Render](https://render.com) ou  [Vercel](https://vercel.com)
 - Adaptar o front-end para consumir a nova API
 
 📄 Incluir no `README.md`:
@@ -83,7 +88,7 @@ O projeto simula o ciclo completo de desenvolvimento de uma aplicação web com 
 
 ---
 
-### Parte 6 (Bonificação): Documentação da API
+### Parte 6 : Documentação da API
 
 - Utilizar Swagger para documentar os endpoints da API
 - Incluir rota `/api-docs` na aplicação
@@ -93,7 +98,10 @@ O projeto simula o ciclo completo de desenvolvimento de uma aplicação web com 
 
 ---
 
-## Organização do Projeto
+## Organização do Projeto e Git
+
+Dever realizar commits regulares.
+Deve utilizar branches sempre que se justifique.
 
 ```text
 projeto-raiz/
@@ -109,30 +117,17 @@ projeto-raiz/
 
 ---
 
-## Sugestão de Branches
-
-| Branch     | Descrição                        |
-| ---------- | -------------------------------- |
-| `main`     | Versão estável e final           |
-| `dev`      | Desenvolvimento geral            |
-| `frontend` | Interface e interação do usuário |
-| `api`      | API real (Node + MongoDB)        |
-| `deploy`   | Adaptações para Vercel/Render    |
-
----
-
 ## Critérios de Avaliação
 
 | Critério                         | Peso |
 | -------------------------------- | ---- |
 | Base de dados JSON correta       | 10%  |
 | API simulada e testada (Postman) | 10%  |
-| Funcionalidade do front-end      | 30%  |
+| Funcionalidade do front-end      | 25%  |
 | Qualidade da API real (Node.js)  | 30%  |
 | Integração front-end/backend     | 10%  |
 | Deploy funcional                 | 10%  |
-| Bonificação (MVC)                | +5%  |
-| Bonificação (Swagger)            | +5%  |
+| Documentação Swagger             | 05%  |
 
 ---
 
@@ -149,4 +144,5 @@ projeto-raiz/
 ### Repositório Base
 
 Usa o repositório template inicial fornecido no GitHub Classroom.
-# TWT1RESTAPI
+# T_TRAB_RESTAPI
+# T_TRAB_RESTAPI
